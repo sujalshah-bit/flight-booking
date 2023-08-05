@@ -15,8 +15,7 @@ app.get('/', () => console.log(`API's`))
 
 app.use('/api/user', require('./router/user'));
 app.use('/api/admin', require('./router/admin'));
-// app.use('/api/flights', require('./routes/flights'));
-// app.use('/api/bookings', require('./routes/bookings'));
+
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
